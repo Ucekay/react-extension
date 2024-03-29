@@ -8,6 +8,12 @@ domNode.id = 'root';
 document.body.appendChild(domNode);
 const root = createRoot(domNode);
 
-const test = <img src="icon.png" alt="" />;
+const App: React.FC = () => {
+  return (
+    <div>
+      <img src="icon.png" alt="" />
+    </div>
+  );
+};
 
-root.render(test);
+root.render(<App />);
