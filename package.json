@@ -1,18 +1,19 @@
 {
   "name": "react-extension",
   "version": "1.0.0",
-  "description": "Chrome extension in React!",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Ucekay",
-  "license": "UNLICENSED",
+  "main": "index.js",
   "devDependencies": {
+    "@types/react": "^18.2.73",
     "react": "^18.2.0",
-    "typescript": "^5.4.3"
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.3",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
   },
-  "dependencies": {
-    "@types/react": "^18.2.73"
+  "description": "Chrome extension in React!",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "webpack --watch --progress --config webpack.config.js"
   }
 }
