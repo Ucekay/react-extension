@@ -6,11 +6,8 @@ import './options.css';
 const domNode = document.createElement('div');
 domNode.id = 'root';
 document.body.appendChild(domNode);
+const root = createRoot(domNode);
 
-if (domNode) {
-  const root = createRoot(domNode);
+const test = <img src="icon.png" alt="" />;
 
-  const test = <img src="icon.png" alt="" />;
-
-  root.render(test);
-}
+root.render(test);
